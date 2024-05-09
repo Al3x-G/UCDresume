@@ -266,10 +266,9 @@ footer {
     padding: 20px;
 }
 
-
 /* ----------------------------------------Three Reasons */
 
-.three-reasons-icon {
+.three-reasons-icon i {
     font-size: 26px;
     color: #e67e22;
 }
