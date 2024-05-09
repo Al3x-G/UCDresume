@@ -46,7 +46,7 @@ h4 {
 .general-sub {
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    color:#fafafa
+    color: #fafafa
 }
 
 .inline-block {
@@ -223,7 +223,7 @@ header {
 footer {
     background-color: #525252;
     color: #fafafa;
-    min-height: 120px;  
+    min-height: 120px;
     margin: 0;
 }
 
@@ -279,4 +279,40 @@ footer {
 
 .three-reasons-heading {
     margin-bottom: 15px;
+}
+
+
+/* ----------------------------------------Personal info */
+
+.personal-info-item {
+    margin: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;    
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative; 
+    width: 60%;
 }
