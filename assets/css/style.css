@@ -298,7 +298,7 @@ footer {
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-    display: inline-block;    
+    display: inline-block;
 }
 
 .personal-info-item .key p,
@@ -318,7 +318,7 @@ footer {
 }
 
 .personal-info-item .value {
-    position: relative; 
+    position: relative;
     width: 60%;
 }
 
@@ -346,13 +346,13 @@ footer {
 
 /* ----------------------------------------Work History */
 
-.history-heading {      
+.history-heading {
     color: #fafafa;
     margin-bottom: 50px;
 }
 
 .timeline-item {
-    padding: 4em 2em 0em 2em;
+    padding: 4em 2em 4em 2em;
     position: relative;
     color: #fafafa;
     border-left: 1px solid;
@@ -374,4 +374,20 @@ footer {
     font-size: 0.8em;
     padding: 0;
     margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 50%;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
