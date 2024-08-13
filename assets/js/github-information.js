@@ -41,6 +41,9 @@ function repoInformationHTML(repos) {
 /************************************************************************************************** */
 
 function fetchGitHubInformation(event) {
+    $("#gh-user-data").html("");
+    $("#gh-repo-data").html("");
+/*above emptys both divs eveytime function is called, bug squishing */
 
     var username = $("#gh-username").val();
     if (!username) {
@@ -86,3 +89,6 @@ $.when(
         }
     });
 }
+
+
+$(document).ready(fetchGitHubInformation);
