@@ -16,6 +16,30 @@ function userInformationHTML(user) {
         </div>`;
 }
 
+/*function to render repos data from github API */
+function repoInformationHTML(repos) {
+    if (repos.length == 0) {
+        return `<div class="clearfix repo-list">No repos!</div>`;
+    }
+
+    var listItemsHTML = repos.map(function(repo) {
+        return `<li>
+                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                </li>`;
+    });
+
+    return `<div class="clearfix repo-list">
+                <p>
+                    <strong>Repo List:</strong>
+                </p>
+                <ul>
+                    ${listItemsHTML.join("\n")}
+                </ul>
+            </div>`; 
+} /*map() returns an array - join() method on that array and join everything with a new line */
+
+/************************************************************************************************** */
+
 function fetchGitHubInformation(event) {
 
     var username = $("#gh-username").val();
